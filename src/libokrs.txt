@@ -5,15 +5,19 @@
 use soroban_sdk::{contract,  contractimpl, log, symbol_short, vec, Env, Symbol, Vec};
 //use soroban_sdk::String;
 use soroban_sdk::{String};
+/*use soroban_sdk::{String, Env};
 
-
+let env = Env::default();
+let msg = "a message";
+let s = String::from_slice(&env, msg);
+let mut out = [0u8; 9];
+s.copy_into_slice(&mut out);
+assert_eq!(msg.as_bytes(), out)*/
 const COUNTER: Symbol = symbol_short!("COUNTER");
 
 #[contract]
 pub struct Echo2Contract;
-//The follwing extern is for trying to "print" things to caller.
-//std::println only works in test: 
-//extern crate std;
+//lo sig soolo anda en test: extern crate std;
 #[contractimpl]
 impl Echo2Contract {
     // echo2 based on examples/events
@@ -83,23 +87,13 @@ s.copy_into_slice(&mut out);
 assert_eq!(msg.as_bytes(), out)*/
 
 
-/* Pendiente 2:aqui deberia convertir el count a un String ... pero no se como hacerlo.
- * busco en https://docs.rs/soroban-sdk/latest/soroban_sdk/struct.String.html#method.to_object pero
- * no me funciona.
- * Asi que genero un String constante :-/
- * Para probar la salida de un String.
- *
- * Pendiente 3: una vez convertido el numero a String, se debe storage el String y no el u32.
- * Alternativamente se podria storage un vector con el numero y el String.*/
-        //
-        //
-        //
+
 //        count
 //let s: String = count.to_string();
 /*let env = Env::default();*/
 let msg = "a message";
 let s = String::from_slice(&env, msg);
-//let mut out = [0u8; 9];
+let mut out = [0u8; 9];
 //s.to_object(&mut,out);
            s
 

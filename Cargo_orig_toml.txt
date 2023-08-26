@@ -1,7 +1,7 @@
 [package]
-name = "echo2"
-version = "0.0.1"
-authors = ["Alejandro Iglesias Vera"]
+name = "soroban-events-contract"
+version = "0.0.0"
+authors = ["Stellar Development Foundation <info@stellar.org>"]
 license = "Apache-2.0"
 edition = "2021"
 publish = false
