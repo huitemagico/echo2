@@ -154,10 +154,13 @@ soroban contract invoke \
     echo2\
     --message "William S. Merwin"
 	
+## GitHub url
+https://github.com/huitemagico/echo2
 
 
+![Flow examples](echo2scheme.png)
 
- 
+
 
 
 
