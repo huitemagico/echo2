@@ -1,9 +1,11 @@
+# echo2 Soroban Rust SDK piece of code
+
   README.md 
-  (1) name 
+ ##(1) name 
   echo2 "tiny piece of code for learning and practice soroban rust sdk"
   version 1.0  
   
-  (2) function description
+ ##  (2) function description
 	 
     This code example receive an text parameter from caller, saving this text on storage,
 	and return the text and the former text received.
@@ -46,12 +48,12 @@
 		   
 
 	
-	 (3) Inspiration and some tech details
+ ##	 (3) Inspiration and some tech details
 	 Loosely based  from examples/events 
 	 Use Persistent kind of storage instead of Instance.
 	 Use of t-uplas for input and output
 	 
-	 (4) Topics I have learned and links for review:
+ ##	 (4) Topics I have learned and links for review:
 	 
 	 a. storage . See https:docs.rs/soroban-sdk/latest/soroban_sdk/storage/index.html
 	  note: persistent storage is not recomended for production environment! 
@@ -68,7 +70,7 @@
 	 j. some shell utils to easy operation    please see main page of github for echo2 
 	 l. ubuntu Rust installation                  https:linuxhint.com/rust-programming-language-ubuntu-2204/
 	 
-	(5)	Steps for run the program:
+ ##	(5)	Steps for run the program:
 	If you want to test and experiment with the code steps are the following:
 	
 	Step a. download the code from github page
@@ -90,7 +92,7 @@
 	 You could copy the code above, or if you like poetry, use the examples below. :-)
 	 
 
-	 (6) Some comments about my experience on programming this code.
+##	 (6) Some comments about my experience on programming this code.
 	 Iam a "little baby" on this software and environment. :-D
 	 I began my interest on Soroban and Rust almost three weeks ago, so on these themes I am VERY young :-D
 	 
@@ -106,7 +108,7 @@
 	 
 	 I hope that this piece of code and urls, could serve for making easier the task people who begin this learming.
 	 
-	 (9) about me.
+##	 (9) about me.
 	 For me working in this project has been very exciting! 
 	 I have 70 years old , and I am recently retired analyst and programmer.
      I  began with punched cards programming with UR machines, then Assembler IBM 360 in the seventys.
@@ -114,7 +116,7 @@
      Fortunately, last year I had the oportunity for moving the fingers on an Java project.
      And now obviously I am converted to Soroban fan :-D 	
 	 
-	 (10) some interesting messages for try:
+##	 (10) some interesting messages for try:
 	 soroban contract invoke \
     --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
     --id 1 \
