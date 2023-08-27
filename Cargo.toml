@@ -13,6 +13,9 @@ doctest = false
 [dependencies]
 soroban-sdk = { version = "0.9.2" }
 
+[features]
+testutils = ["soroban-sdk/testutils"]
+
 [dev_dependencies]
 soroban-sdk = { version = "0.9.2", features = ["testutils"] }
 
@@ -21,7 +24,7 @@ opt-level = "z"
 overflow-checks = true
 debug = 0
 strip = "symbols"
-debug-assertions = true
+debug-assertions = false
 panic = "abort"
 codegen-units = 1
 lto = true
@@ -29,3 +32,6 @@ lto = true
 [profile.release-with-logs]
 inherits = "release"
 debug-assertions = true
+
+
+
