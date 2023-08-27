@@ -1,20 +1,49 @@
   README.md 
   (1) name 
-  echo2 "tiny piece of code for learming and practice soroban rust sdk"
+  echo2 "tiny piece of code for learning and practice soroban rust sdk"
   version 1.0  
   (2) function description
-	 write and read an counter.
 	 
-    This code example receive an parameter from caller, and return a counter of succesive runs
-	and a vector of numbers.
-	(3) input
-	one word
+    This code example receive an text parameter from caller, saving this text on storage,
+	and return the text and the former text received.
+	
+	 Example of running:
+	 run number 1:
+	 soroban contract invoke \
+    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
+    --id 1 \
+    -- \
+    echo2\
+    --message HelloWorld
+
+     echo2 return :
+	 ["messag05","HelloWorld"]
+	       |                  |
+		   |                  +-----------------------echo2 return the same text received
+		   |
+		   +----------------this is former text passing to echo2
+		   
+	run number 2:	   
+	soroban contract invoke \
+    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
+    --id 1 \
+    -- \
+    echo2\
+    --message HowAreYouPeople
+	
+	 echo2 return :
+	 ["HelloWorld","HowAreYouPeople"]
+		   
+	(3) So, the input for echo2 is one text
+	
 	(4) output
-    The 	return values consist of n-tupla (Symbol, String, and array of u32 values. 
-	 "pseudo random pending."
+    The output is the text receiving BEFORE the last call and the text received in the last call.
+	
+	
 	 (5) Based on and tech details
 	 Loosely based  from examples/events 
 	 Use Persistent kind of storage instead of Instance.
+	 
 	 (6) Topics I have learned with corresponding links:
 	 
 	 a. storage . See https:docs.rs/soroban-sdk/latest/soroban_sdk/storage/index.html
@@ -33,27 +62,46 @@
 	 l. ubuntu Rust installation                  https:linuxhint.com/rust-programming-language-ubuntu-2204/
 	 
 	(7)	Steps for run the program:
-	a. download the code from github page
-	b. be sure set the structure for echo2 as follows:
-	 (main directory)
-	 |
-	 |
-	 +-------src
-	 |           +-------------------lib.rs test.rs 
-	 |
-	 +-------release 
-	 etc
-	 c. at main directory run the shell for compile and test
-	 d. run build shell
-	 e. run execute shell
+	If you want to test and experiment with the code steps are the following:
+	Step a. download the code from github page
+	Step b. check the structure for echo2, is the standard.
+	 i.e. at the main directory you must run the compile, build code, and the src files (lib.rs, test.rs) 
+	 are under src directory.
 	 
-	 (8) My experience of this journey
-	 My experience programming this code. About Soroban SDK, is that there is good documentation about SDK (https://soroban.stellar.org/docs/fundamentals-and-concepts/high-level-overview)
-	 Nevertheless for me, beginning the journey of Rust language PLUS the Soroban SDK has been lovely and hard work.
-	 I began with the installation of UBUNTU 23 in my computer three weeks ago and then immersing in the several documentation, was a little confusing.
-	 After these weeks, the list of urls listed above represent a kind of treasure, and a map for continuing the travel.
-	 I hope that this piece of code and urls, serve for facilitate the task people who begin this learming.
+	 Step c. at main directory run the code for compile and test.
+	 cargo test -- --nocapture
+
+     note: because of changing answers of code, testing is omitted in the test.rs
+	 If you want to run with test block, simply uncomment the lines commented.
+	 
+	 Step d. run build code
+	 soroban contract build --profile release-with-logs
+	 note: if you want no logs you have to change parameters above.
+	 	 
+	 Step e. run code
+	 soroban contract invoke \
+    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
+    --id 1 \
+    -- \
+    echo2\
+    --message HowAreYouPeople
+
+     Note: the interesting of echo2 consist precisely in passing several parameters, so you have to change 
+	 the string 'HowAreYouPeople' for another and another. This could be done with an shell loop.
+	 
+	 (8) My experience programming this code.
+	 I began my interest on Soroban and Rust almost three weeks ago, so on these themes I am VERY young :-D
+	 I could say that about Soroban SDK, is that there is good documentation about SDK (https://soroban.stellar.org/docs/fundamentals-and-concepts/high-level-overview)
+	 But in my opinion (and level of expertise), there is a lack of little examples for making more easy use the SDK.
+	 Nevertheless for me, beginning the journey of Rust language PLUS the Soroban SDK has been a lovely and hard work.
+	 I began with the installation of UBUNTU 23 in my computer three weeks ago and then immersing in the documentation, beginning for 
+	 understanding the business of Stellar, and ending for working the Soroban SDK , was a very hard work.
+	 After these weeks, the list of urls listed above represent a map for continuing the travel.
+	 I hope that this piece of code and urls, could serve for making easier the task people who begin this learming.
 	 
 	 (9) about me.
-	 I am a retired analyst and programmer who began with punched cards programming with Assembler IBM 360 in the seventys, I have worked
-	 in PL/1, Algol, Fortran, COBOL, C, Java.  For me working in this project has been very exciting! 
+	  For me working in this project has been very exciting! 
+	 I am a retired analyst and programmer who began with punched cards programming with Assembler IBM 360 in the seventys.
+	 I have worked	 in PL/1, Algol, Fortran, COBOL, C.  After working as programmer, I was Business Analyst for a lot of years.
+     Fortunately, last year I had the oportunity for moving the fingers on an Java project.
+     And now obviously I am converted to Soroban fan :-D 	

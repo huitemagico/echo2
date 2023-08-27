@@ -1,0 +1,2000 @@
+cd hello3
+ls
+cd src
+ls
+cat main*
+code .
+cd ..
+ls
+cd rust*
+ls
+cd pro*
+ls
+cd hello3
+cargo build
+ls
+ls target
+cd ta*
+ls
+ls debug
+ls -al
+cd debu*
+ls -al
+hello3
+ls build
+ls
+pwd
+ls -al
+cd build
+ls -al
+cd ..
+pwd
+cd ..
+find . -name ´*.exe' -print
+find . -name ´*.exe'-print
+find . -name '*.exe' -print
+cd hello3
+ls
+cargo build
+ls target/debug
+pwd
+cargo run
+pwd
+cd 
+ls
+cd Idea*
+ls -al
+mkdir aivworkdir
+chmod a+rwx aiv*
+cargo install grcov
+ls
+cd I*
+cd hello3
+ls
+ls -al
+cd hel*
+ls -al
+cd src
+ls
+cat main.rs
+cd ..
+ls -al
+cd hello3
+ls
+cd he*
+ls -al
+cd src
+ls
+cat mai*
+pwd
+cd
+ls -al
+cd *Lear*
+ls -al
+ls -alR | more
+lsmod | grep kvm
+grep --color vmx /proc/cpuinfo 
+grep --color svm  /proc/cpuinfo 
+svm
+cpuinfo
+/proc/cpuinfo
+sudo /proc/cpuinfo
+cat /proc/cpuinfo
+cat /proc/cpuinfo |grep vmx
+sudo /proc/cpuinfo
+lsmod | grep kvm
+sudo kvm-ok
+lsmod | grep kvm
+pwd
+ls
+cd I*
+cd Idea*
+ls
+cd aiv*
+ls
+cd ..
+ls
+pwd
+cd ..
+ls
+cd *Lear*
+ls -alR |foo
+ls -alR | grep foo
+cat foo.txt
+pwd
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils -y
+sudo apt install virt-manager -y
+ls -al /dev/kvm
+dpkg -l|grep xserver
+dpkg -l|egrep -i "(kde|gnome|lxde|xfce|mint|unity|fluxbox|openbox)" | grep -v library
+udo qemu-system-x86_64 -enable-kvm -cdrom http://archive.ubuntu.com/ubuntu/dists/bionic-updates/main/installer-amd64/current/images/netboot/mini.iso
+sudo qemu-system-x86_64 -enable-kvm -cdrom http://archive.ubuntu.com/ubuntu/dists/bionic-updates/main/installer-amd64/current/images/netboot/mini.iso
+sudo apt update
+sudo apt install vsftpd -y
+kvm-ok
+ls -al /dev/kvm
+who am i
+cat /etc/passwd
+cat /etc/passwd|grep aiglesias
+sudo usermod -aG kvm aiglesiasvera
+exit
+echo $DESKTOP_SESSION
+echo $XDG_CURRENT_DESKTOP
+sudo apt remove docker-desktop
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker.io
+sudo usermod -aG docker `whoami`
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install apt-transport-https ca-certificates   curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg |  sudo apt-key add -
+sudo apt-get install docker-ce
+./docker.sh install
+sudo apt update
+sudo apt install ca-certificates curl gnupg lsb-release
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+ls -al 
+ls -al etc/apt/keyrings
+ls -al /etc/apt/keyrings
+sudo apt-get install docker-ce
+sudo apt remove docker-desktop
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+$ sudo chmod a+r /etc/apt/keyrings/docker.gpg
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > pepito
+cat pepito
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+docker run --help
+docker.socket
+apt-get install git
+sudo apt-get install git
+pwd
+ls -al
+find . -name '*.odt' -print
+cd shellscr*
+ls -al
+cd
+ls
+cd Documen*
+pwd
+ls -al
+pwd
+soroban
+cd
+soroban
+cargo install --locked --version 0.9.4 soroban-cli
+soroban
+bash
+cargo new --lib hello-soroban
+pwd
+ls
+ls -al
+cd rustwork
+ls -al
+cd projects
+ls -al
+cd ..
+ls -al
+pwd
+mkdir ubuntusoroban
+cd ubuntusoroban
+vi leame.txt
+ls
+cd
+ls
+rmdir hello-soroban
+cd hello*
+ls
+pw
+cd ..
+pwd
+mv hello-soroban rustwork/ubuntusoroban
+cd rust*/ubun*
+ls -al
+pwd
+ls -al
+cd hel*
+ls
+cd Carg*
+vi Carg*
+ls
+cd src
+ls
+vi lib*
+ls
+vi test.rs
+ls
+cargo test
+soroban contract build
+cd ..
+ls
+soroban contract build
+pwd
+ls
+cargo test
+cargo build --target wasm32-unknown-unknown --release
+soroban contract build
+cargo build
+cargo build --help
+cargo build --target wasm32-unknown-unknown --release
+cargo build --target wasm32-unknown-unknown
+rustc --explain E0405
+soroban contract build
+pwd
+cd rustwork
+ls
+cd ub*
+ls
+cargo new --lib hello-soroban2
+ls -al
+ls
+cd *2
+ls
+vi Car*
+ls
+cd src
+ls
+vi lib.rs
+ls
+vi test.rs
+pwd
+cd ..
+cargo test
+soroban contract build
+pwd
+cd ..
+ls alR *2
+ls -alR *2
+ls -al
+cd *2
+ls -al
+cat Cargo.toml
+ls
+cd src
+ls
+cat lib.rs
+ls
+cat test.rs
+cd ..
+soroban contract build
+Some errors have detailed explanations: E0405, E0412, E0425, E0433, E0463, E0531.
+error: could not compile `num-traits` (lib) due to 766 previous errors
+error: exit status exit status: 101
+Some errors have detailed explanations: E0405, E0412, E0425, E0433, E0463, E0531.
+error: could not compile `num-traits` (lib) due to 766 previous errors
+error: exit status exit status: 101
+Some errors have detailed explanations: E0405, E0412, E0425, E0433, E0463, E0531.
+error: could not compile `num-traits` (lib) due to 766 previous errors
+error: exit status exit status: 101
+Some errors have detailed explanations: E0405, E0412, E0425, E0433, E0463, E0531.
+error: could not compile `num-traits` (lib) due to 766 previous errors
+error: exit status exit status: 101
+Some errors have detailed explanations: E0405, E0412, E0425, E0433, E0463, E0531.
+error: could not compile `num-traits` (lib) due to 766 previous errors
+error: exit status exit status: 101
+Some errors have detailed explanations: E0405, E0412, E0425, E0433, E0463, E0531.
+error: could not compile `num-traits` (lib) due to 766 previous errors
+error: exit status exit status: 101
+soroban contract build > pepe.txt
+ls
+cat pepe.txt
+rustup target add wasm32-unknown-unknown
+soroban contract build 
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/[project-name].wasm     --id 1     --     hello     --to friend
+vi run1.sh
+chmod a+x run*
+run1.sh
+./run1.sh
+vi run1.sh
+./run1.sh
+pwd
+ls -alR '*.wasm'
+find . -name '*.wasm' -print
+ls
+ls src
+cat src/lib.rs
+cd ..
+ls
+cd *2
+ls
+cat Cargo.toml
+vi run1.sh
+./run1.sh
+find . -name '*.wasm' -print
+ls
+rm pepe.txt
+ls target
+ls target/w*
+ls target/w*/rele*
+ls
+cat Cargo.toml
+vi Cargo.toml
+cargo test
+soroban contract build
+find . -name '*.wasm' -print
+vi run1.sh
+run1.sh
+./run1.sh
+ls -al target
+ls -al target/w*
+ls -al target/w*/rel*
+ls -al target/wasm32-unknown-unknown/release/hello-soroban2.wasm
+ls
+echo $PATH
+export PATH=".:$PATH"
+echo $PATH
+env
+env | grep PATH
+ls
+run1.sh
+vi run1.sh
+run1.sh
+ls -al /target/wasm32-unknown-unknown/release/hello-soroban2.wasm
+ls -al ./target/wasm32-unknown-unknown/release/hello-soroban2.wasm
+ls -al ./target
+ls -al ./target/wasm32-unknown-unknown
+ls -al ./target/wasm32-unknown-unknown/release
+ls -al ./target/wasm32-unknown-unknown/release/hello-soroban2.wasm
+vi run1.sh
+run1.sh
+cat /etc/passwd
+cat /etc/passwd | grep aiglesi*
+echo $0
+cd
+ls -al
+cat .bashrc
+echo $HOME
+./cargo/env
+. "$HOME/.cargo/env"
+pwd
+mkdir aivutils
+echo $PATH
+exit
+echo $PATH
+ls -al
+vi .baschrc
+ls -al
+vi .bashrc
+ls
+rmdir aivutils
+mkdir MyUtils
+cd MyUtils
+vi MyEnv.sh
+sudo docker run hello-world
+vi MyEnv.sh
+chmod a+x *.sh
+MyEnv.sh
+./My*
+echo $SHELL
+vi My*
+My*
+exit
+sudo docker run hello-world
+dpkg -l|egrep -i "(kde|gnome|lxde|xfce|mint|unity|fluxbox|openbox)" | grep -v library
+dpkg -l|gnome
+dpkg -l|grep gnome
+dpkg -l|grep gnome-shell
+pwd
+ls
+vi My*
+exit
+MyEnv.sh
+cd MyU*
+vi MyE*
+My*
+cd
+cd rust*
+ls
+cd ubuntu*
+ls
+cd *2
+ls
+run1.sh
+pwd
+cd
+cd My*
+vi My*
+My*
+ls /home/aiglesiasvera/rustwork/ubuntusoroban
+ls /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+vi My*
+My*
+cd
+cd rust*
+ls
+cd ubu*
+ls
+cd *2
+ls
+cat run1.sh
+ls target
+ls target/w*
+ls target/w*/rel*
+pwd
+cat run1.sh
+ls ./target/wasm32-unknown-unknown/release/
+ls -al
+cd target
+ls -al
+cd wa*
+ls -al
+cd rel*
+ls -al
+ls -al h*2.wasm
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+vi run1.sh
+cat run1.sh
+ls -al ./target/wasm32-unknown-unknown/release/hello_soroban2.wasm
+run1.sh
+cat run1.sh
+cd
+cd My*
+vi My*
+My*
+pwd
+cd home/aiglesiasvera/rustwork/ubuntusoroban
+cd /home/aiglesiasvera/rustwork/ubuntusoroban
+ls
+cd *2
+ls
+git init
+ls -al
+ls -al .git
+git init
+ls -al .git
+ls -al
+ls -al .git*
+cat .gitignore
+cd ..
+ls -al
+cd hello-soroban2
+ls
+ca
+cd target
+ls -alñ
+ls -al
+cd ..
+ls -al
+ls -al .soroban
+pwd
+ls -al
+ls -alR
+MyEnv.sh
+ls -al
+cat .ignore
+ls -al
+cat .gitignore
+cd
+cd My*
+vi My*
+My*
+vi My*
+ls | count
+ls |wc
+ls
+man wc
+ls |wc -l
+cd
+cd rust*
+ls
+cd ub*
+ls
+cd *2
+ls -alR | wc -l
+ls -al
+ls -al src
+cd
+cd My*
+vi My*
+My*
+cd
+cd home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+cat .ignore
+ls
+cd targe
+cd target
+ls
+cd rel*
+ls
+cd ..
+ls -al
+echo .soroban >> .gitignore
+cat .gitignore
+git add .
+git commit -m "Initial commit: hello-soroban contract"
+git config user.name
+ls -al $HOME
+cd
+ls -al 
+ls -al .*
+ls -al .gitconfig
+git config --global vi
+git config --global vim
+git config --global core.editor vi
+git config --edit
+pwd
+cd
+vi .gitconfig
+ls -al
+ls -al .gitconfig
+gitconfig --edit
+git config --edit
+pwd
+cd .gitignore
+cd .gitconfig
+git config --global --edit
+pwd
+My*
+cd My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git commit -m "Initial commit: hello-soroban contract"
+cat home/aiglesiasvera/.gitconfig
+cat /home/aiglesiasvera/.gitconfig
+cd
+ls -al
+vi .gitconfig
+cd
+cd My*
+My*
+cd home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git commit -m "Initial commit: hello-soroban contract"
+vi /home/aiglesiasvera/.gitconfig
+git commit -m "Initial commit: hello-soroban contract"
+vi /home/aiglesiasvera/.gitconfig
+git commit -m "Initial commit: hello-soroban contract"
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git commit -m "Initial commit: hello-soroban contract"
+git --version
+git --help
+git --version
+cd
+cd My*
+vi My*
+git config -l
+git remote -v
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git remote -v
+https://github.com/huitemagico/proyecto2
+git remote -v
+vi remotegit.sh
+chmod a+x *.sh
+remotegit.sh
+cat remo*
+git remote -v
+gh version
+gh --version
+git --help
+git remote -v
+git remote -v show
+git remote -v 
+git branch -r
+git remote -v 
+git remote -v show -n proyecto2
+c
+cd My*
+vi My*
+pwd
+cd
+cd My*
+vi My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git --status
+git status
+git add remotegit
+git add remotegit.sh
+git status
+git commit -m "v23/08 14:08"
+ls -al
+My*
+MyEnv.sh
+cd
+cd My* 
+vi My*
+cd 
+ls -al
+cat .gitconfig
+cd My*
+vi My*
+My*
+vi My*
+git remote -v show -n
+git remote -v show -n proyecto2
+cd
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git remote -v show -n proyecto2
+cd
+cd My* 
+vi My*
+My*
+vi My*
+My*
+vi My*
+My*
+vi My*.sh
+My*
+vi My*.sh
+My*
+vi My*.sh
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban2
+git push proyecto2
+git push --set-upstream proyecto2 master
+cd ..
+ls
+cd ..
+ls
+cd projects
+ls
+cd ..
+ls
+cd ubuntusoroban
+ls
+cat leame*
+cd
+ls
+cd IdeaPro*
+ls -al
+cd aivwor*
+ls
+cd ..
+cd rustide*
+ls
+cd ..
+ls
+ls -alR
+cd /home/aiglesiasvera/rustwork/projects
+ls -al
+pwd
+ls -alk
+cd ..
+ls -al
+cd ubunt*
+ls -al
+cd hello-soroban
+ls
+rm Cargo.*
+ls
+cd src
+ls -al
+rm *.rs
+cd ..
+rmdir src
+ls
+cd target
+ñs
+ls
+pwd
+rm -r /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban/target
+ls
+cd ..
+ls
+cd ..
+rmdir hello-soroban
+cd hello-soroban
+ls -al
+rm .gitignore
+cd .git
+ls -añ
+ls -al
+pwd
+rm -r /home/aiglesiasvera/rustwork/ubuntusoroban/hello-soroban/.git
+cd ..
+ls
+ls -al
+cd ..
+rmdir hello-soroban
+ls -al
+cd ..
+ls -al
+pwd
+cd 
+cd Desacargas
+cd
+ls
+cd Desc*
+ls -al
+mv soroban-examples-main /home/aiglesiasvera/rustwork
+cd /home/aiglesiasvera/rustwork
+ls -al
+cd soroban*
+ls -al
+cd increment
+ls -al
+cd ..
+ls -al ..
+cd soro*
+pwd
+cd increment
+cd
+cd rustw*
+ls
+cd ubuntusoroban
+ls
+mkdir increment
+cd incr*
+pwd
+cd
+cd rust*
+ls
+cd *main
+cp -r increment /home/aiglesiasvera/rustwork/ubuntusoroban/increment
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/increment
+ls -alR
+ls
+rm -r home/aiglesiasvera/rustwork/ubuntusoroban/increment
+rm -r /home/aiglesiasvera/rustwork/ubuntusoroban/increment
+cd ..
+ls -al
+cd ..
+cd *main
+cd increment
+cd ..
+cp -r increment /home/aiglesiasvera/rustwork/ubuntusoroban/increment
+ls -alR /home/aiglesiasvera/rustwork/ubuntusoroban
+pwd
+cd ..
+pwd
+ls -al
+cd *main
+pwd
+ls -al
+cd ..
+ls
+cd ub*
+ls -al
+pwd
+ls -al
+cd incr*
+ls
+ls -al src
+cargo test
+pwd
+ls -al src
+soroban contract build
+ls
+cd src
+ls
+vi lib.rs
+vi test.rs
+cd ..
+cargo test
+soroban contract build
+ls
+vi run1.sh
+chmod a+x run1.sh
+run1.sh
+vi run1.sh
+run1.sh
+vi run1.sh
+run1.sh
+vi run1.sh
+run1.sh
+cd ..
+mkdir myincrement
+cd increment
+lñs
+ls
+cp -r . ../myincrement
+cd ..
+ls
+cd my*
+ls -al
+cargo test
+soroban contract build
+run1.sh
+ls
+cd src
+ls
+cp test.rs mytest.rs
+mv test.rs test_orig.rs
+mv mytest.rs test.rs
+cd ..
+cargo test
+soroban contract build
+cd src
+ls
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+ls
+cargo test > pepe.txt
+cat pepe.txt
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+cargo watch “test -- --nocapture”
+cargo test -- --nocapture
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+vi lib.rs
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+vi test.rs
+cargo test
+cargo test -- --nocapture
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+vi lib.rs
+cargo test -- --nocapture
+vi lib.rs
+ls
+cat lib.rs
+cd ..
+vi run1.sh
+ls -alR target
+ls -al target
+ls -al target/release
+ls src
+soroban contract build
+ls
+ls -al target
+ls -al target/wa*
+ls -al target/wa*/relea*
+cd target/wa*/relea*
+ls -al
+cd ..
+cd myinc*
+ls
+cd src
+ls
+vi test.rs
+cd ..
+cargo test
+soroban contract build
+cd src
+ls
+vi lib.rs
+ls -al 
+pwd
+ls -al 
+vi lib.rs
+cd ..
+cargo test
+vi test.rs
+cd src
+vi test.rs
+cargo test
+cargo test -- --nocapture
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+vi lib.rs
+vi test.rs
+cargo test -- --nocapture
+cat test.rs
+vi lib.rs
+cargo test -- --nocapture
+cd ..
+ls
+cd *main
+grep -r 'persitent'
+grep -r 'persistent'
+grep -r 'write_balance'
+grep -r 'receive_balance'
+cd ..
+cd increment
+ls
+cd src
+ls
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cat lib.rs
+cd src
+cat lib.rs
+cd ..
+cd my*
+cargo test -- --nocapture
+vi lib.rs
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd ..
+cd main
+cargo test -- --nocaptur
+cd main*
+ls
+cd *main
+grep -r '.get'
+cd ..cd
+cd ..
+cd ubu*
+ls
+cd my*
+cd src
+vi lib.rs
+:q
+vi lib.rs
+cd ..
+cargo test -- --nocaptur
+cargo test -- --nocapture
+cd src
+vi lib.rs
+ls -al
+rm .lib.rs.swp
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+rustc --explain E0308
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+rustc --explain E0282
+rustc --explain E0282 >pepe.txt
+vi pepe.txt
+cd src
+vi lib.rs
+cd ..
+rustc --explain E0282 >pepe.txt
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd ..
+cd *main
+grep -r '.get'
+cd ..
+cd ubu*
+ls
+cd my*
+cd src
+vi lib.rs
+cd ..
+ls
+cd hello*
+ls -al
+cd src
+ls
+vi lib.rs
+cd ..
+ls
+cd ..
+ls
+mkdir hello-soroban3
+cp -r hello-soroban2 hello-soroban3
+cd hello-soroban3
+ls
+ls -al
+mv hello-soroban2 hello-soroban4
+mv hello-soroban4 ..
+cd ..
+rmdir hello-soroban3
+ls
+cd hello-soroban4
+ls
+run1.sh
+ls -al
+cd src
+ls -al
+rm .test.rs.swp
+pwd
+cd ..
+cd *main
+grep -r 'Env::default'
+cd token/src/
+ls
+grep -r 'Env::default'
+vi test.rs
+cd ..
+ls
+cd events
+ls
+cargo test -- --nocapture
+soroban contract build
+vi run1.sh
+chmod a+x *.sh
+run1.sh
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment
+cd src
+l
+cp lib.rs lib_orig.rs
+vi lib.rs
+cargo test -- --nocapture
+soroban contract build
+cd ..
+soroban contract build
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build
+cd src
+rustc --explain E0152
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd .
+cd ..
+vi lib.rs
+cd src
+vi lib.rs
+cd ..
+cd
+cd ..
+cd 
+cd rustwork
+cd *main
+grep -r 'print'
+grep -r 'println'
+cd logging/src/
+vi test.rs
+cd ..
+cd events
+cd src
+ls
+vi lib.rs
+cd ..
+grep -r 'log'
+cd logging/src/
+ls
+vi lib.rs
+cd ..
+cd ubu*
+cd ..
+cd *main
+cd events
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment
+cd src
+vi lib.rs
+cd ..
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment > pepe.txt
+cat pepe.txt
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment > pepe.txt
+cat pepe.txt
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment > pepe.txt
+cat pepe.txt
+cd ..
+grep -r 'log'
+cd log!(&env, "Hello {}", value);
+cd ..
+errors/src/lib.rs
+errors/src
+cd errors
+cd src
+vi lib.rs
+cd ..
+cd events
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment > pepe.txt
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+cd src
+ls
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+vi lib.rs
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+cargo test -- --nocapture
+cd ..
+ls
+cd events
+ls
+vi Cargo.toml
+soroban contract build --profile release-with-logs
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+ls
+vi Cargo.toml
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+cd src
+vi lib.rs
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+cd ..
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+exit
+cd
+cd My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban
+ls
+cd my*
+ls
+run1.sh
+cd ..
+cd incre*
+ls
+run1.sh
+run1a.sh
+chmod a+x *.sh
+run1a.sh
+run1.sh
+cargo test
+cd ../my*
+cargo test
+ls
+cd src
+ls
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+vi lib.rs
+cd ..
+grep -r 'symbol_short'
+ls
+cd ..
+ls
+cd *main
+grep -r 'symbol_short'
+cd custom*
+ls
+cd src
+ls
+vi lib.rs
+cd ..
+ls
+cargo test
+cargo test -- --nocapture
+vi test.rs
+cd src
+vi test.rs
+ls
+cd ..
+ls -alR | more
+cd
+My*
+cd My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/
+ls -al
+cd my*
+ls -al
+cd src
+ls
+vi lib.rs
+cd ..
+cargo test
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+ls
+cat run1.sh
+ls -al target/w*/rel*
+run1.sh
+cargo test -- --nocapture
+cd src
+ls
+vi lib.rs
+ls -al
+rm .lib.rs.swp
+vi test.rs
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+vi lib.rs
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+grep -r 'storage.persistent().get'
+ls
+cd ..
+ls
+cd *main
+grep -r 'storage.persistent().get'
+grep -r 'storage.persistent()'
+grep -r 'persistent'
+grep -r 'temporary'
+cd ..
+ls
+cd ub*
+ls
+cd my*
+cargo test -- --nocapture
+cd ..
+cd *main
+grep -r 'storage.persistent().get'
+grep -r '.get'
+cd ..
+cd ubu*
+ls
+cd he*
+cd src
+ls
+vi test.rs
+exit
+cd
+cd My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban
+ls
+cd ..
+ls
+cd main*
+cd *main
+cd events
+ls
+run1.sh
+cd ..
+ls
+cd ub*
+pwd
+cp -r home/aiglesiasvera/rustwork/soroban-examples-main/events .
+cp -r /home/aiglesiasvera/rustwork/soroban-examples-main/events .
+ls
+cd events
+ls
+ls -al home/aiglesiasvera/rustwork/soroban-examples-main/events
+ls -al /home/aiglesiasvera/rustwork/soroban-examples-main/events
+cd ..
+cp -r /home/aiglesiasvera/rustwork/soroban-examples-main/events .
+cd events
+ls
+run1.sh
+cd ..
+mkdir echo2
+cp -r /home/aiglesiasvera/rustwork/soroban-examples-main/events ./echo2
+ls -al
+cd echo2
+ls
+pwd
+rm -r /home/aiglesiasvera/rustwork/ubuntusoroban/echo2
+cd ..
+ls
+mkdir echo2
+ls -al /home/aiglesiasvera/rustwork/soroban-examples-main/events
+cd echo2
+mkdir src
+mkdir target
+cp /home/aiglesiasvera/rustwork/soroban-examples-main/events/src/* src
+cp /home/aiglesiasvera/rustwork/soroban-examples-main/events/target/* target
+cp -r /home/aiglesiasvera/rustwork/soroban-examples-main/events/target target
+ls -al target
+ls
+pwd
+rm -r target
+cp -r /home/aiglesiasvera/rustwork/soroban-examples-main/events/target .
+ls
+ls -alR target
+ls
+ls 
+ls -al /home/aiglesiasvera/rustwork/soroban-examples-main/events 
+cp /home/aiglesiasvera/rustwork/soroban-examples-main/events/Cargo.* .
+cp /home/aiglesiasvera/rustwork/soroban-examples-main/events/Makefile .
+cp /home/aiglesiasvera/rustwork/soroban-examples-main/events/run1.sh .
+chmod a+x run1.sh
+cat run1.sh
+run1.sh
+ls
+ls -al
+run1.sh
+vi leame.txt
+ls -al ..
+cd events
+ls
+cd ../events
+ls
+run1.sh
+pwd
+cd ../echo2
+vi lea*
+ls -al
+pwd
+cd
+cd My*
+ls
+vi My*
+My*
+vi My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban/echo2
+ls
+cd src
+ls
+vi lib.rs
+cd ..
+ls ~/rustwork/ubuntusoroban/
+cp ~/rustwork/ubuntusoroban/src/* src
+ls
+cp ~/rustwork/ubuntusoroban/events/src/* src
+cp ~/rustwork/ubuntusoroban/events/* .
+cp ~/rustwork/ubuntusoroban/events/target/* target
+cp -r  ~/rustwork/ubuntusoroban/events/target/* .
+ls
+run1.sh
+vi compi.sh
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+cat run1.sh
+ls -al target/w*/rel*/
+run1.sh
+cd src
+ls
+cd ..
+ls
+vi Cargo.toml
+mv Cargo.toml Cargo_orig_toml.txt
+ls
+mv Cargonew.txt Cargo.toml
+cat Cargo.lock
+ls -al
+cd src
+ls
+vi lib.rs
+ls
+mv lib.rs libeventsokrs.txt
+mv libnew.rs lib.rs
+cp test.rs testrsorig.txt
+vi test.rs
+ls
+cd ..
+ls
+cargo test -- --nocapture
+vi Cargo.toml
+cargo test -- --nocapture
+vi Cargo.toml
+cargo test -- --nocapture
+vi test.rs
+cd src
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+vi Cargo.toml
+cd ..
+vi Cargo.toml
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+ls -al target/wa*
+ls -al target/wa*/rel*logs
+vi run1.sh
+ls target/wa*
+vi run1.sh
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+run1.sh
+vi run1.sh
+run1.sh
+cd src
+vi lib.rs
+cp lib.rs lib1okrs.txt
+vi lib.rs
+cd ..
+cd hello*2
+ls
+run1.sh
+cat run1.sh
+vi run1.sh
+run1.sh
+cd src
+vi lib.rs
+cd ..
+ls
+cargo test -- --nocapture
+cd test.rs
+cd src
+vi test.rs
+vi lib.rs
+cd ..
+ls
+cd increment
+cd src
+vi lib.rs
+vi test.rs
+cd ..
+ls
+cd ..
+ls
+cd echo2
+cd src
+vi test.rs
+vi lib.rs
+cd ..
+cd .
+cd ..
+cd Hello*2
+ls
+cd hell*2
+cd src
+ls -al
+vi lib.rs
+vi test.rs
+ls -al
+cp test.rs testrsokrs.txt
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+cargo test -- --nocapture
+vi lib.rs
+vi test.rs
+cargo test -- --nocapture
+vi test.rs
+ls ../../increment/test.rs
+ls ../..
+ls ../../increment
+ls ../../increment/src
+cat ../../increment/src/test.rs
+vi test.rs
+cargo test -- --nocapture
+cd ..
+cd increment
+ls
+run1.sh
+cat run1.sh
+cd ..
+ls
+cd echo2
+cat run1.sh
+cd ..
+cd increment
+vi run1.sh
+run1.sh
+ls -al target/wa*
+cd ..
+cd He*2
+cd he*2
+ls
+cat Cargo.toml
+cd ../increment
+cat Cargo.toml
+cat run1.sh
+cat Cargo.toml
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+cat run1.sh
+run1.sh
+cd src
+vi test.rs
+cd ..
+cd echo2
+run1.sh
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+:q!
+cd src
+vi test.rs
+vi lib.rs
+vi test.rs
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi test.rs
+cd ..
+cargo test -- --nocapture
+cd src
+vi test.rs
+cd ..
+cargo test -- --nocapture
+cd src
+ls
+vi lib.rs
+cd ..
+soroban contract build --profile release-with-logs
+rustc --explain E0152
+cd src
+vi lib.rs
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+cd ..
+ls
+cd *main
+grep -r 'println' .
+cd alloc
+ls
+vi Cargo.toml
+cd src
+vi test.rs
+cd 
+cd rust*
+cd soro*
+cd ../ubu*
+cd echo2
+ls
+cd src
+vi test.rs
+vi lib.rs
+cd ..
+cd..
+cd ..
+cd *main
+grep -r 'println' .
+grep -r 'log' -print
+grep -r 'log' .
+cd My*
+My*
+cd /home/aiglesiasvera/rustwork/ubuntusoroban
+pwd
+ls
+cd my*
++ls
+ls
+cd ssrc
+cd src
+ls
+vi lib.rs
+ls
+cd ..
+ls
+run1.sh
+cd ..
+ls
+cd increment
+ls
+run1.sh
+cd ..
+cd hello*2
+ls
+run1.sh
+cd src
+ls
+vi lib.rs
+cd ..
+cd ,,
+cd ..
+cd increment
+cd src
+ls
+vi lib.rs
+cd ..
+cat run1.sh
+run1.sh
+--help
+cat run1.sh
+pwd
+cd ..
+cd hello*2
+ls
+cat run1.sh
+cd ..
+cd *main
+cd increment
+ls
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+soroban contract invoke     --wasm target/wasm32-unknown-unknown/release/soroban_events_contract.wasm     --id 1     --     increment 
+ls target
+ls target/w*
+cd target
+ls
+cd rel*
+ls
+cd inc*
+ls
+cd ..
+soroban contract build --profile release-with-logs
+ls target
+cd w*
+cd target/w*
+ls
+cd rel*
+ls
+ls -al
+vi run2.sh
+cat run2*
+ls -al arget/wasm32-unknown-unknown/release/soroban_increment_contract.wasm
+ls -al target/wasm32-unknown-unknown/release/soroban_increment_contract.wasm
+ls -al target/wasm32-unknown-unknown/release
+ls -al target/wasm32-unknown-unknown/
+cd ..
+ls -al target/wasm32-unknown-unknown/release
+ls -al target/wasm32-unknown-unknown/
+ls -al target/wasm32-unknown-unknown/release-with-logs
+cat run2.sh
+find . -name 'run2.sh' -print
+mv ./target/wasm32-unknown-unknown/release-with-logs/run2.sh .
+chmod a+x *.sh
+run2.sh
+vi run2.sh
+cat run2.sh
+ls -al target/wasm*/
+vi run2.sh
+run2.sh
+ls
+cd
+sudo apt update
+sudo apt upgrade -y
+git --version
+sudo apt install git
+git --version
+git config --global user.name "aiglesiasvera"
+mkdir sample-directory -p
+git config --global user.email "aiglesiasvera@gmail.com"
+cd sample-*
+pwd
+ls -al
+git init
+cd 
+cd rust*
+ls
+cd ubunt*
+ls
+cd increment
+cd ..
+cp -r ubuntusoroban /home/aiglesiasvera/sample-directory
+ls /home/aiglesiasvera/sample-directory
+ls /home/aiglesiasvera/sample-directory/ubunt*
+cd /home/aiglesiasvera/sample-directory
+cd ubun*
+ls -al
+cd increment
+ls
+run1.sh
+mv increment increment0
+pwd
+cd ..
+mv increment increment0
+cp -r $HOME/rustwork/soroban-examples-main/increment ./increment
+cd increment
+ls
+run2.sh
+echo "# echo1" >> README.md
+git init
+git add README.md
+ls -alR
+ls -al
+vi .gitignore
+ls
+ls -al target
+ls -al
+ls -al .soroban
+ls target
+ls target/debug
+ls target/release*
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+ls -al target
+ls -al target/was*
+ls -al target/was*/rel*
+ls -al target/wasm32-unknown-unknown/release-with-logs/soroban_increment_contract.wasm
+vi run2.sh
+chmod a+x run2.sh
+run2.sh
+vi run2.sh
+run2.sh
+cd
+cd rust*
+ls
+cd *main/increment
+ls
+cat run2.sh
+run2.sh
+vi run2.sh
+cd
+cd sample*
+ls
+cd ub*
+ls
+cd increment
+vi run2.sh
+run2.sh
+ls -al
+ls -al target
+ls -al target/debug
+ls -al target/CACHEDIR.TAG
+ls -al target/deps
+ls -al target/.rustc_info.json
+vi .gitignore
+ls -al target/
+vi .gitignore
+ls -al target/
+vi .gitignore
+cat .gitignore
+ls -al
+vi .gitignore
+git add .
+git --help
+git log
+git show
+git status
+git reset
+git status
+vi .gitignore
+git add .
+git status
+vi .gitignore
+git reset
+git status
+vi .gitignore
+git add .
+git status
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:huitemagico/echo1.git
+git push -u origin main
+cd
+ls -al ~/.ssh
+cat kn*
+ls -al .ssh
+ls -al
+cat .ssh
+cd .ssh
+ls -al
+cat k*
+cd
+ssh-keygen -t ed25519 -C "aiglesiasvera@gmail.com"
+eval "$(ssh-agent -
+ssh-add ~/.ssh/id_ed25519
+cd sample*
+git remote -v
+https://github.com/huitemagico/echo1
+git remote set-url origin git@github.com:huitemagico/echo1.git
+git remote set-url echo1 git@github.com:huitemagico/echo1.git
+git remote -v
+git remote add origin https://github.com/huitemagico/echo1
+git remote -v
+git remote set-url origin git@github.com:huitemagico/echo1.git
+git remote -v
+cd increment
+git status
+ls al
+ls -al
+cd ubu*
+git status
+ls -al
+cd increment
+git status
+ls -al
+git add .
+git status
+git commit
+git remote -v
+git push origin main
+gh auth login
+sudo apt  install gh
+gh auth login
+git push origin main
+git pull --verbose
+git push origin main
+git pull --verbose
+git branch
+git branch -v
+git merge
+git merge main
+git pull main 
+git push origin main
+git push --help
+git push --f
+git push --all
+git pull
+git status
+git fetch
+git status
+git pull
+git remote -v
+git status
+git pull origin
+git branch -u origin/echo1 increment
+git checkout -b rama1
+git pull origin rama1
+git remote add origin https://github.com/huitemagico/echo2.git
+git remote -v
+git remote set-url origin git@github.com:huitemagico/echo2.git
+git status
+git add.
+git add .
+git commit 
+git push
+git push --set-upstream origin rama1
+ls
+vi run2.sh
+git status
+git add .
+git status
+git commit
+git push
+ls -al
+cd ..
+ls -al
+cd increment
+cd ..
+ls
+cd increment
+pwd
+ls -al
+cd ..
+ls
+cd hello*2
+ls
+run1.sh
+cd src
+ls
+vi lib.rs
+vi test.rs
+vi lib.rs
+cd ..
+<pre>cargo test -- --nocapture
+</pre>
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+cat run1.sh
+run1.sh
+cd src
+vi lib.rs
+vi test.rs
+cd ..
+cd echo2
+cd ..
+cd echo2
+ls
+cd he*2
+cd src
+vi test.rs
+cd ..
+cd .
+cd ..
+cd echo2
+ls
+cd
+cd rust*/
+cd ubu*
+cd echo2
+cd src
+ls
+grep -r 'print' .
+vi lib.rs
+cd ..
+cargo test -- --nocapture
+soroban contract build --profile release-with-logs
+run1.sh
+cat run1.sh
+cat ../hello*2/run1.sh
+vi run1.sh
+run1.sh
+cd src
+vi lib.rs
