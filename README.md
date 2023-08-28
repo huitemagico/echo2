@@ -109,12 +109,13 @@
 	 I hope that this piece of code and urls, could serve for making easier the task people who begin this learming.
 	 
 ##	 (9) about me.
-	 For me working in this project has been very exciting! 
-	 I have 70 years old , and I am recently retired analyst and programmer.
-     I  began with punched cards programming with UR machines, then Assembler IBM 360 in the seventys.
-	 My experience include PL/1, Algol, Fortran, COBOL, C.  After working as programmer in the beginning, I was Business Analyst for a lot of years.
-     Fortunately, last year I had the oportunity for moving the fingers on an Java project.
-     And now obviously I am converted to Soroban fan :-D 	
+	 About me.
+Nowadays I am a very happy freelance programmer.
+I began with punched cards programming with UR machines, then Assembler IBM 360 in the seventys.
+My experience include PL/1, Algol, Fortran, COBOL, C.
+After working as programmer in the beginning, I was Business Analyst for a lot (too much!)of years.
+Last years I had the opportunity for working hard on Java Spring Batch project.
+And now obviously I am converted to Soroban fan :-D , because I think that Smart Contract is a new big revolution.
 	 
 ##	 (10) some interesting messages for try:
 	 soroban contract invoke \
