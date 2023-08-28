@@ -160,6 +160,8 @@ https://github.com/huitemagico/echo2
 
 ![Flow examples](echo2scheme.png)
 
+![Flow examples](echo2seqdiag.png)
+
 
 
 
