@@ -2,7 +2,7 @@
 
   README.md 
   
-##(1) name 
+##  (1) name 
   echo2 "tiny piece of code for learning and practice soroban rust sdk"
   version 1.0  
   
