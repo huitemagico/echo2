@@ -1,11 +1,12 @@
 # echo2 Soroban Rust SDK piece of code
 
   README.md 
- ##(1) name 
+  
+##(1) name 
   echo2 "tiny piece of code for learning and practice soroban rust sdk"
   version 1.0  
   
- ##  (2) function description
+##  (2) function description
 	 
     This code example receive an text parameter from caller, saving this text on storage,
 	and return the text and the former text received.
