@@ -24,8 +24,8 @@ If Echo2 receives another reset message while in the reset_state, it remains in 
 However, if it receives a message different from "reset," it transitions to the echo_state while saving the previous state and counter.
 While in the echo_state, if Echo2 receives a general message that is different from "reset," it remains in that state. 
 The machine continues to stay in the echo_state until it receives a "reset" message, at which point it transitions back to the reset_state.
-The following diagram describes this
-.
+The following diagram describes this:
+
 ![Flow examples](echo2state99.png)
 
 Note: The explanation of a state machine is easiest using a "finite state machine diagram" for better understanding.
