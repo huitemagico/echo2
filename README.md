@@ -1,19 +1,39 @@
-# echo2 Soroban Rust SDK piece of code
+# echo2 : Soroban Rust SDK piece of code
 
-  README.md 
+[GitHub url](https://github.com/huitemagico/echo2)
+
+  README.md Version 21-09-2023
+  Note: If you want to access a comprehensive documentation for installing all the necessary tools to run 'echo2,' 
+  please refer to [echo2tutorial.pdf] (https://github.com/huitemagico/echo2/echo2tutorial.pdf)on this same site.
   
 ##  (1) name 
   echo2 "tiny piece of code for learning and practice soroban rust sdk"
-  version 1.0  
+  version 1.1 
   
-##  (2) function description
-	 
-    This code example receive an text parameter from caller, saving this text on storage,
-	and return the text and the former text received.
-	
+
+##  (2) What is the function of the echo2 program
+This program takes a text parameter as input from the caller, retrieves the previous message from 
+persistent storage associated with the contract, and then saves the new message. 
+So, with each subsequent call, 'echo2' returns 'the echo of your message' along with the previous message.
+
+
+## (3) Echo2 as an finite state machine
+Echo2 is a program that implements a basic state machine with two states: reset_state and echo_state. 
+In the reset_state, the program does not process the previous message but instead resets it with a special meaning. 
+If Echo2 receives another reset message while in the reset_state, it remains in that state. 
+However, if it receives a message different from "reset," it transitions to the echo_state while saving the previous state and counter.
+While in the echo_state, if Echo2 receives a general message that is different from "reset," it remains in that state. 
+The machine continues to stay in the echo_state until it receives a "reset" message, at which point it transitions back to the reset_state.
+The following diagram describes this.
+Note: The explanation of a state machine is easiest using a "finite state machine diagram" for better understanding.
+See "[finite state machine diagram](https://en.wikipedia.org/wiki/Finite-state_machine)" 
+
+
+## (4) Example run	
+Note: If you want to access a comprehensive documentation for installing all the necessary tools to run 'echo2,' please refer to 'echo2tutorial.pdf' on this same site.
 	 Example:
-	 For very first time, echo2 accept resetting his storage.
-	 See invoke below:
+	 Note: It's useful that, before anything else, you call the program with the 'reset' parameter.
+	 
 	 soroban contract invoke \
     --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
     --id 1 \
@@ -30,7 +50,7 @@
 	 Element(2): 186 : This is the counter of executions
 	 Element(3): "echo2 v.1.1 27/08/2023"   : This is the version of the echo2 program
 	 Element(4):  "ResetMessageStored"     : Message saying that the stored message has been resetting
-	 Element(5):  The message has been received by echo2
+	 Element(5):  The message that has been received by echo2
 	 	   
 	run number 2:	   
 	soroban contract invoke \
@@ -45,126 +65,73 @@
 	 [59,187,["echo2 v.1.1 27/08/2023","reset","On the last day of the world, I would want to plant a tree."]]
 	 
 	 In this moment, the "old message" was "reset".
-	 
-		   
 
-	
- ##	 (3) Inspiration and some tech details
-	 Loosely based  from examples/events 
-	 Use Persistent kind of storage instead of Instance.
-	 Use of t-uplas for input and output
-	 
- ##	 (4) Topics I have learned and links for review:
-	 
-	 a. storage . See https:docs.rs/soroban-sdk/latest/soroban_sdk/storage/index.html
-	  note: persistent storage is not recomended for production environment! 
-	   see https:soroban.stellar.org/docs/fundamentals-and-concepts/persisting-data
-	 b. String manipulation. Obs.: rust String is different from soroban struct String . 
-	                                                                https:docs.rs/soroban-sdk/latest/soroban_sdk/struct.String.html
-	 c. struct Vec from soroban .                  https:docs.rs/soroban-sdk/latest/soroban_sdk/struct.Vec.html
-	 d. struct Env from Soroban sdk .           https:docs.rs/soroban-sdk/latest/soroban_sdk/struct.Env.html
-	 e. doc from Soroban                              https:soroban.stellar.org/docs/getting-started/setup#install-the-soroban-cli
-	 f. doc for (some) examples                   https:soroban.stellar.org/docs/basic-tutorials/events
-	 g. the examples                                    https:github.com/stellar/soroban-examples
-	 h. rust doc sometimes gives you hope... BUT  helas!... we must use #![no_std] !!  https:doc.rust-lang.org/std/index.html
-	 i. main page for soroban Rust sdk       https:soroban.stellar.org/docs/reference/sdks/rust
-	 j. some shell utils to easy operation    please see main page of github for echo2 
-	 l. ubuntu Rust installation                  https:linuxhint.com/rust-programming-language-ubuntu-2204/
-	 
- ##	(5)	Steps for run the program:
+ ##	 (5) Topics used at program, and urls
+ | Topic    | url |
+| -------- | ------- |
+|  storage   | https://docs.rs/soroban-sdk/latest/soroban_sdk/storage/index.html  |
+|   Persisting Data         | https://soroban.stellar.org/docs/fundamentals-and-concepts/persisting-data  |
+| struct String     |https://docs.rs/soroban-sdk/latest/soroban_sdk/struct.String.html |
+|Soroban struct Vec  | https://docs.rs/soroban-sdk/latest/soroban_sdk/struct.Vec.html|
+|struct Env  | https://docs.rs/soroban-sdk/latest/soroban_sdk/struct.Env.html  |
+|Soroban CLI  | https://soroban.stellar.org/docs/getting-started/setup#install-the-soroban-cli  |
+|Soroban examples doc    | https://soroban.stellar.org/docs/basic-tutorials/events |
+|Soroban examples     | https://github.com/stellar/soroban-examples) |
+|rust doc     | https://doc.rust-lang.org/std/index.html|
+|Soroban Rust sdk     | https://soroban.stellar.org/docs/reference/sdks/rust|
+|Github url |[GitHub url](https://github.com/huitemagico/echo2)|
+
+
+ ##	(6)	Steps for run the program:
+ Note: If you want to access a comprehensive documentation for installing all the necessary tools to run 'echo2,' please refer to 'echo2tutorial.pdf' on this same site."
 	If you want to test and experiment with the code steps are the following:
 	
 	Step a. download the code from github page
-	
 	Step b. check the structure for echo2, is the standard.
 	 i.e. at the main directory you must run the compile, build code, and the src files (lib.rs, test.rs) 
 	 are under src directory.
-	 
-	 Step c. at main directory run the code for compile and test.
+    Step c. at main directory run the code for compile and test.
 	 cargo test -- --nocapture
-
      note: because of changing answers of code, testing begin with resetting the stored message.
-	 
-	 Step d. run build code
+    Step d. run build code
 	 soroban contract build --profile release-with-logs
 	 note: if you want no logs you have to change parameters above.
-	 	 
-	 Step e. run code
+    Step e. run code
 	 You could copy the code above, or if you like poetry, use the examples below. :-)
 	 
 
-##	 (6) Some comments about my experience on programming this code.
-	 Iam a "little baby" on this software and environment. :-D
-	 I began my interest on Soroban and Rust almost three weeks ago, so on these themes I am VERY young :-D
-	 
-	 I could say that about Soroban SDK, is that there is good documentation about SDK (https://soroban.stellar.org/docs/fundamentals-and-concepts/high-level-overview)
-	 But in my opinion (and level of expertise), I think that there is a big opportunity, for writing more basic examples.
-	 I think that there is a lack of little examples for making more easy use the SDK.
-	 
-	 Nevertheless for me, beginning the journey of Rust language PLUS the Soroban SDK has been a lovely and hard work.
-	 I began with the installation of UBUNTU 23 in my computer three weeks ago and after that, I began to read the documentation, beginning for 
-	 understanding the business of Stellar, and ending for working with the Soroban SDK . It was a very hard work.
-	 
-	 After these weeks, the list of urls listed above represent a map for continuing the travel.
-	 
-	 I hope that this piece of code and urls, could serve for making easier the task people who begin this learming.
-	 
-##	 (9) about me.
-	 About me.
-Nowadays I am a very happy freelance programmer.
-I began with punched cards programming with UR machines, then Assembler IBM 360 in the seventys.
-My experience include PL/1, Algol, Fortran, COBOL, C.
-After working as programmer in the beginning, I was Business Analyst for a lot (too much!)of years.
-Last years I had the opportunity for working hard on Java Spring Batch project.
-And now obviously I am converted to Soroban fan :-D , because I think that Smart Contract is a new big revolution.
-	 
-##	 (10) some interesting messages for try:
-	 soroban contract invoke \
-    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
-    --id 1 \
-    -- \
-    echo2\
-    --message "On the last day of the world, I would want to plant a tree."
+## (7) Some comments about my experience with programming this code.
+I am a 'little baby' in this software and environment. :-D
+I started my interest in Soroban and Rust almost three weeks ago, so in these topics, I am VERY new. :-D
 
-soroban contract invoke \
-    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
-    --id 1 \
-    -- \
-    echo2\
-    --message "Tell me what you see vanishing and I will tell you who you are."
+I can say that there is good documentation available for the Soroban SDK (https://soroban.stellar.org/docs/fundamentals-and-concepts/high-level-overview). 
+However, in my opinion (given my level of expertise), there is a significant opportunity for providing more basic examples. 
+I believe that having more small examples would make it easier to use the SDK.
 
+Nevertheless, for me, starting the journey with the Rust language AND the Soroban SDK has been both enjoyable and challenging. 
+I began by installing Ubuntu 23 on my computer three weeks ago, and after that, I delved into the documentation, 
+starting with understanding Stellar's business and ending with working with the Soroban SDK. 
+It was quite a challenging experience.
 
-soroban contract invoke \
-    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
-    --id 1 \
-    -- \
-    echo2\
-    --message "Poetry is a way of looking at the world for the first time."
+After these weeks, the list of URLs provided above represents a roadmap for continuing this journey.
 
+I hope that this piece of code and the URLs can make it easier for people who are just starting to learn.
+Note: If you want to access a comprehensive documentation for installing all the necessary tools to run 'echo2,' please refer to 'echo2tutorial.pdf' on this same site."
 
-soroban contract invoke \
-    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
-    --id 1 \
-    -- \
-    echo2\
-    --message "Now all my teachers are dead except silence."
-
-soroban contract invoke \
-    --wasm target/wasm32-unknown-unknown/release-with-logs/echo2.wasm \
-    --id 1 \
-    -- \
-    echo2\
-    --message "William S. Merwin"
-	
-## GitHub url
+	 
+##	 (8) about me.
+About me:
+Currently, I am a very happy freelance programmer. 
+I started with punched card programming using UR machines, then moved on to Assembler for IBM 360 in the seventies. 
+My experience includes PL/1, Algol, Fortran, COBOL, and C.
+After working as a programmer in the early years, I spent many (perhaps too many!) years as a Business Analyst. 
+In recent years, I had the opportunity to work extensively on a Java Spring Batch project.
+And now, of course, I have become a Soroban fan :-D because I believe that Smart Contracts represent a new and significant revolution.
+	 
+##	 (9) GitHub url
 https://github.com/huitemagico/echo2
 
 
 ![Flow examples](echo2scheme.png)
 
 ![Flow examples](echo2seqdiag.png)
-
-
-
-
-

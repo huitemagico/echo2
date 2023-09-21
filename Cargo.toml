@@ -1,24 +1,20 @@
 [package]
 name = "echo2"
 version = "0.0.1"
-authors = ["Alejandro Iglesias Vera"]
+authors = ["ruser1name"]
 license = "Apache-2.0"
 edition = "2021"
 publish = false
-
 [lib]
 crate-type = ["cdylib"]
 doctest = false
 
 [dependencies]
 soroban-sdk = { version = "0.9.2" }
-
 [features]
 testutils = ["soroban-sdk/testutils"]
-
 [dev_dependencies]
 soroban-sdk = { version = "0.9.2", features = ["testutils"] }
-
 [profile.release]
 opt-level = "z"
 overflow-checks = true
@@ -28,10 +24,6 @@ debug-assertions = false
 panic = "abort"
 codegen-units = 1
 lto = true
-
 [profile.release-with-logs]
 inherits = "release"
 debug-assertions = true
-
-
-
