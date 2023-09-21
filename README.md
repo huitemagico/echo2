@@ -4,7 +4,7 @@
 
   README.md Version 21-09-2023
   Note: If you want to access a comprehensive documentation for installing all the necessary tools to run 'echo2,' 
-  please refer to [echo2tutorial.pdf] (https://github.com/huitemagico/echo2/echo2tutorial.pdf)on this same site.
+  please refer to [echo2tutorial.pdf] (https://github.com/huitemagico/echo2/echo2tutorial.pdf)  on this same site.
   
 ##  (1) name 
   echo2 "tiny piece of code for learning and practice soroban rust sdk"
